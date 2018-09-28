@@ -67,6 +67,8 @@ class Piggy(pigo.Pigo):
 
 
     def gucci_shuffle(self):
+        self.right_rot()
+
 
 
 
