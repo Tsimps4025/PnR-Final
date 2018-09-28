@@ -66,8 +66,8 @@ class Piggy(pigo.Pigo):
 
 
 
-   def gucci_shuffle(self):
-       self.Right():
+    def gucci_shuffle(self):
+
 
 
     def obstacle_count(self):
