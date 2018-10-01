@@ -67,8 +67,9 @@ class Piggy(pigo.Pigo):
 
 
     def gucci_shuffle(self):
-        for x in range(200000):
-            self.right_rot()
+        for x in range(10):
+            self.encF()
+            self.encB()
 
 
 
