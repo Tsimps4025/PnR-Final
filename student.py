@@ -73,7 +73,8 @@ class Piggy(pigo.Pigo):
         for x in range(4):
             if not self.is_clear():
                 return False
-            self.encR(8):
+            self.encR(8)
+
 
 
         # if we find no problems
