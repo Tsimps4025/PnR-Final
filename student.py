@@ -65,8 +65,6 @@ class Piggy(pigo.Pigo):
         ##### WRITE YOUR FIRST PROJECT HERE
         self.gucci_shuffle()
 
-
-
     def safe_to_dance(self):
         """circles around and checks for any obstacles"""
         # check for problems
@@ -74,14 +72,11 @@ class Piggy(pigo.Pigo):
             if not self.is_clear():
                 return False
             self.encR(8)
-
-
-
         # if we find no problems
         return True
 
     def gucci_shuffle(self):
-        for x in range():
+        for x in range(4):
             self.encR(4)
             self.encL(4)
             self.encF(4)
