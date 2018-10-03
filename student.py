@@ -80,7 +80,8 @@ class Piggy(pigo.Pigo):
             self.encR()
             self.encL()
             self.encF()
-            self.left_rot()
+            self.left_rot(1000)
+
 
 
 
