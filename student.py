@@ -70,7 +70,7 @@ class Piggy(pigo.Pigo):
     def safe_to_dance(self):
         """circles around and checks for any obstacles"""
         # check for problems
-        for xs in range(4):
+        for x in range(4):
             if not self.is_clear():
                 return False
             self.encR(29.5/4) # is this 90 deg?
