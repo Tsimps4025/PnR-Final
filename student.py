@@ -85,7 +85,7 @@ class Piggy(pigo.Pigo):
             time.sleep(.5)
             self.servo(130)
             time.sleep(.5)
-            self.stop
+            self.stop()
 
 
 
