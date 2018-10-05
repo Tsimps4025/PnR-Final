@@ -81,10 +81,10 @@ class Piggy(pigo.Pigo):
             self.encL(18)
             self.encF(18)
             self.left_rot()
-            self.servo(90)
-            time.sleep(.5)
-            self.servo(130)
-            time.sleep(.5)
+            self.servo(80)
+            time.sleep(1)
+            self.servo(140)
+            time.sleep(1)
             self.stop()
 
 
