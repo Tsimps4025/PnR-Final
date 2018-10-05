@@ -77,10 +77,15 @@ class Piggy(pigo.Pigo):
 
     def gucci_shuffle(self):
         for x in range(4):
-            self.encR()
-            self.encL()
-            self.encF()
-            self.left_rot(1000)
+            self.encR(18)
+            self.encL(18)
+            self.encF(18)
+            self.left_rot()
+            self.servo(90)
+            time.sleep(.5)
+            self.servo(130)
+            time.sleep(.5)
+            self.stop
 
 
 
