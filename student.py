@@ -95,11 +95,13 @@ class Piggy(pigo.Pigo):
             self.servo(140)
 
 
-
-
-
-
-
+    def back_it_up(self):
+        for x in range(2):
+            self.encR(9)
+            self.encB(9)
+            self.encL(9)
+            self.encB(9)
+            self.encR(20)
 
 
     def obstacle_count(self):
