@@ -66,6 +66,7 @@ class Piggy(pigo.Pigo):
         self.gucci_shuffle()
         self.whip_my_hair()
         self.back_it_up()
+
     def safe_to_dance(self):
         """circles around and checks for any obstacles"""
         # check for problems
@@ -77,10 +78,12 @@ class Piggy(pigo.Pigo):
         return True
 
     def gucci_shuffle(self):
+        """moves right,left,forward, and then rotates while moving head"""
         for x in range(4):
             self.encR(18)
             self.encL(18)
             self.encF(18)
+            # starts moving and shaking head at same time
             self.left_rot()
             self.servo(80)
             time.sleep(1)
@@ -88,21 +91,20 @@ class Piggy(pigo.Pigo):
             time.sleep(1)
             self.stop()
 
-
     def whip_my_hair(self):
+        """whips hair back and forth"""
         for x in range(10):
             self.servo(80)
             self.servo(140)
 
-
     def back_it_up(self):
+        """backs up while moving left and right"""
         for x in range(2):
             self.encR(9)
             self.encB(9)
             self.encL(9)
             self.encB(9)
             self.encR(20)
-
 
     def obstacle_count(self):
         """scans and estimates the number of obstacles within sight"""
