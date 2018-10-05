@@ -88,6 +88,12 @@ class Piggy(pigo.Pigo):
             self.stop()
 
 
+    def whip_my_hair(self):
+        for x in range(10):
+            self.servo(80)
+            self.servo(140)
+
+
 
 
 
