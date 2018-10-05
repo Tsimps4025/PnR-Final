@@ -65,7 +65,7 @@ class Piggy(pigo.Pigo):
         ##### WRITE YOUR FIRST PROJECT HERE
         self.gucci_shuffle()
         self.whip_my_hair()
-
+        self.back_it_up()
     def safe_to_dance(self):
         """circles around and checks for any obstacles"""
         # check for problems
