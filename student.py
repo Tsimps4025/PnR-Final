@@ -107,6 +107,7 @@ class Piggy(pigo.Pigo):
             self.encB(9)
             self.encR(20)
 
+    # from Garret
     def surprise(self):
         """creates the coolest move you have ever seen"""
         for x in range(2):
