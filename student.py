@@ -66,6 +66,7 @@ class Piggy(pigo.Pigo):
         self.gucci_shuffle()
         self.whip_my_hair()
         self.back_it_up()
+        self.surprise()
 
     def safe_to_dance(self):
         """circles around and checks for any obstacles"""
@@ -105,6 +106,28 @@ class Piggy(pigo.Pigo):
             self.encL(9)
             self.encB(9)
             self.encR(20)
+
+    def surprise(self):
+        """creates the coolest move you have ever seen""""
+         for x in range(2):
+            self.encF(30)
+            self.encL(5)
+            self.encB(5)
+            self.encR(10)
+            self.encB(5)
+            self.encL(5)
+            self.encB(5)
+            self.encR(10)
+            self.encB(5)
+            self.encL(5)
+            self.encB(5)
+            self.encR(10)
+            self.encB(5)
+            self.encL(5)
+            self.encB(5)
+            self.encR(10)
+            self.encB(5)
+
 
     def obstacle_count(self):
         """scans and estimates the number of obstacles within sight"""
