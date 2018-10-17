@@ -61,7 +61,7 @@ class Piggy(pigo.Pigo):
         while True:
             if self.dist() < 20:
                 self.encB(5)
-                self.encR(20)
+                self.encR(45)
             time.sleep(.1)
 
 
