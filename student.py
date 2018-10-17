@@ -62,6 +62,9 @@ class Piggy(pigo.Pigo):
             if self.dist() < 20:
                 self.encB(5)
                 self.encR(43)
+                self.encF(5)
+                self.encB(5)
+                self.encF(5)
             time.sleep(.1)
 
 
