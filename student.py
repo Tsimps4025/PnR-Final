@@ -56,7 +56,7 @@ class Piggy(pigo.Pigo):
         # activate the item selected
         menu.get(ans, [None, error])[1]()
 
-    def open_house(selfself):
+    def open_house(self):
         """reacts to dist measurement in a cute way"""
         while True:
             if self.dist() < 20:
