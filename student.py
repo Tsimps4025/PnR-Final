@@ -230,7 +230,7 @@ class Piggy(pigo.Pigo):
         """ drive straight while path is clear """
         self.fwd()
         while self.dist() > self.SAFE_STOP_DIST:
-            time.sleep(.5)
+            time.sleep(.3)
         self.stop()
 ####################################################
 ############### STATIC FUNCTIONS
