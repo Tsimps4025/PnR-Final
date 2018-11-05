@@ -256,7 +256,7 @@ class Piggy(pigo.Pigo):
 
     def choose_direction(self):
         """has the robot decide whether turning right or left is a better option"""
-            self.wide_scan(count=3)  # scan the area
+            self.wide_scan(count=5)  # scan the area
             # picks left or right
             # create two variables, left_total and right_total
             left_total = 0
