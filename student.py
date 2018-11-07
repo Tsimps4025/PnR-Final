@@ -224,7 +224,8 @@ class Piggy(pigo.Pigo):
             if self.is_clear():
                 self.cruise()
             else:
-                self.encR(10)
+                self.choose_direction()
+
 
     def cruise(self):
         """ drive straight while path is clear """
