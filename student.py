@@ -220,12 +220,27 @@ class Piggy(pigo.Pigo):
         print("-----------! NAVIGATION ACTIVATED !------------\n")
         print("-------- [ Press CTRL + C to stop me ] --------\n")
         print("-----------! NAVIGATION ACTIVATED !------------\n")
+        count = 0
+
+        error_count = 0
         while True:
             if self.is_clear():
                 self.cruise()
+                error_count = 0
             else:
                 self.choose_direction()
+                error_count += 1
+                if error_count = 10:
+                    raw_input("Wus poppin logang")
 
+    def is_clear_infront(selfself):
+        """check the scan array to see if there's a path dead ahead"""
+
+        # checks for obstacles
+        for ang in range(self.MIDPOINT - 10, self.MIDPOINT + 10):
+            if self.scan[ang] and self.scan[ang] < self.SAFE_STOP_DIST:
+                return False
+        return True
 
     def cruise(self):
         """ drive straight while path is clear """
@@ -234,6 +249,10 @@ class Piggy(pigo.Pigo):
             time.sleep(.3)
         self.stop()
 
+    def is_clear_ahead(self):
+        for ang in range(self.MIDPOINT - 14, self.MIDPOINT +14):
+            if self.scan[ang] and self.scan[ang] < self.SAFE_STOP_DIST:
+                return False
     def is_clear(self):
         """does a 3-point scan around the midpoint, returns false if a test fails"""
         print("Running the is_clear method.")
@@ -270,6 +289,9 @@ class Piggy(pigo.Pigo):
             if self.scan[angle]:
                     # add up the numbers to left_total
                 left_total += self.scan[angle]
+        if self.is_clear_ahead():
+            print("It's Clear")
+            return
             # if right is bigger:
         if right_total > left_total:
                 # turn right
