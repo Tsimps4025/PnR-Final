@@ -230,7 +230,7 @@ class Piggy(pigo.Pigo):
             else:
                 self.choose_direction()
                 error_count += 1
-                if error_count = 10:
+                if error_count == 10:
                     raw_input("Wus poppin logang")
 
     def is_clear_infront(selfself):
