@@ -233,7 +233,7 @@ class Piggy(pigo.Pigo):
                 if error_count == 10:
                     raw_input("Wus poppin logang")
 
-    def is_clear_infront(selfself):
+    def is_clear_infront(self):
         """check the scan array to see if there's a path dead ahead"""
 
         # checks for obstacles
